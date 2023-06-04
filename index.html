@@ -1,37 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DataDaredevils</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <header class="site-header" role="banner">
-    <div class="header-inner container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="DataDaredevils logo" loading="lazy">
-        </a>
-      </div>
-      <nav class="main-navigation" role="navigation">
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-        <ul id="primary-menu" class="menu">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="registration.html">Registration</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="cta">
-        <a href="registration.html" class="btn-register">Register Now</a>
+<header id="header" class="sticky-header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <!-- logo of the page -->
+          <div class="logo text-center">
+            <a href="index.html"><img src="images/logo.png" alt="DATA DAREDEVILS"></a>
+          </div>
+          <div class="nav-holder">
+            <a href="#" class="nav-opener"><span>menu</span></a>
+            <!-- nav of the page -->
+            <nav id="nav">
+              <ul class="list-unstyled text-center">
+                <li class="active">
+                  <a href="#">home</a>
+                  <ul class="list-unstyled drop">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="home.html">Home 2</a></li>
+                  </ul>
+                </li>
+                <li class="mega-drop">
+                  <a href="#">shop</a>
+                  <div class="drop-holder">
+                    <div class="coll">
+                      <strong class="title">SHOP PAGE</strong>
+                      <ul class="list-unstyled">
+                        <li><a href="category-page.html">Shop</a></li>
+                        <li><a href="shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="shoping-cart.html">Checkout</a></li>
+                        <li><a href="login.html">Wishlist</a></li>
+                        <li><a href="login.html">Login</a></li>
+                      </ul>
+                    </div>
+                    <!-- remaining code... -->
+                  </div>
+                </li>
+                <!-- remaining code... -->
+              </ul>
+            </nav>
+            <div class="align-right">
+              <ul class="list-unstyled icon-list">
+                <!-- remaining code... -->
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
-</body>
-</html>
+  
