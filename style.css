@@ -1,20 +1,72 @@
-body {
+:root {
+    --main-color: #007bff;
+  }
+  
+  body {
+    margin: 0;
     font-family: Arial, sans-serif;
-}
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-main {
-    margin: 20px;
-}
-#signup {
-    text-align: center;
-    color: #dc3545;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-}
+  }
+  
+  .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--main-color);
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .logo img {
+    height: 2.5rem;
+    width: auto;
+  }
+  
+  .main-navigation {
+    display: flex;
+  }
+  
+  .main-navigation ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .main-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  .cta .btn-register {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .main-navigation {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--main-color);
+      transition: 0.3s;
+    }
+  
+    .main-navigation.show {
+      left: 0;
+    }
+  
+  
